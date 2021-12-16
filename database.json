@@ -1,0 +1,397 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Dion Stoade",
+      "address": "6866 4th Court",
+      "email": "dstoade0@cornell.edu"
+    },
+    {
+      "userName": "Cloud_Strife_Fangirl",
+      "email": "1stClassSoldier@shinra.net",
+      "password": "CloudStrife",
+      "id": 2
+    },
+    {
+      "userName": "FF_Fanboy",
+      "email": "SummonerYuna@spira.com",
+      "password": "Blitzball",
+      "id": 3
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "fantasyTitle": "Final Fantasy VI",
+      "img": "FFVI.jpeg",
+      "alt": 1
+    },
+    {
+      "id": 2,
+      "fantasyTitle": "Final Fantasy X",
+      "img": "FFX.png",
+      "alt": 2
+    },
+    {
+      "id": 3,
+      "fantasyTitle": "Final Fantasy VII Remake",
+      "img": "FFVIIR.png",
+      "alt": 3
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "gamesId": 1,
+      "name": "Leora",
+      "description": "Fx unsp part of scapula, r shoulder, subs for fx w nonunion",
+      "abilities": "Pressure ulcer, heel",
+      "limitBreak": "Removal of Nonautologous Tissue Substitute from Left Humeral Shaft, Percutaneous Approach",
+      "image": "http://dummyimage.com/134x100.png/dddddd/000000"
+    },
+    {
+      "id": 2,
+      "gamesId": 2,
+      "name": "Storm",
+      "description": "Unspecified open wound of vocal cord, sequela",
+      "abilities": "Amput foot, unilat-compl",
+      "limitBreak": "Replacement of Left Tarsal with Nonautologous Tissue Substitute, Percutaneous Approach",
+      "image": "http://dummyimage.com/200x100.png/dddddd/000000"
+    },
+    {
+      "id": 3,
+      "gamesId": 3,
+      "name": "Winfred",
+      "description": "Retained wood fragments",
+      "abilities": "Traum pneumothorax-close",
+      "limitBreak": "Restriction of Left External Carotid Artery with Extraluminal Device, Percutaneous Endoscopic Approach",
+      "image": "http://dummyimage.com/158x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 4,
+      "gamesId": 1,
+      "name": "Arabella",
+      "description": "Injury of other nerves at hip and thigh level, right leg",
+      "abilities": "Plantar wart",
+      "limitBreak": "Reposition Ascending Colon, Via Natural or Artificial Opening",
+      "image": "http://dummyimage.com/141x100.png/dddddd/000000"
+    },
+    {
+      "id": 5,
+      "gamesId": 2,
+      "name": "Ajay",
+      "description": "Injury of unspecified iliac vein, subsequent encounter",
+      "abilities": "Adv eff cns stimulnt NEC",
+      "limitBreak": "Computerized Tomography (CT Scan) of Abdominal Aorta using Other Contrast",
+      "image": "http://dummyimage.com/170x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 6,
+      "gamesId": 3,
+      "name": "Vallie",
+      "description": "Prsn brd/alit pedl cyc injured in collision w 2/3-whl mv",
+      "abilities": "Hair transplant",
+      "limitBreak": "Supplement Right Nipple with Synthetic Substitute, Percutaneous Approach",
+      "image": "http://dummyimage.com/244x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 7,
+      "gamesId": 1,
+      "name": "Renard",
+      "description": "Burn of second degree of abdominal wall, initial encounter",
+      "abilities": "Iodine hypothyroidism",
+      "limitBreak": "Destruction of Facial Muscle, Open Approach",
+      "image": "http://dummyimage.com/129x100.png/dddddd/000000"
+    },
+    {
+      "id": 8,
+      "gamesId": 2,
+      "name": "Stafford",
+      "description": "Unsp nondisp fx of 4th cervcal vert, subs for fx w nonunion",
+      "abilities": "Disloc 4th cerv vert-cl",
+      "limitBreak": "Drainage of Lumbar Vertebral Disc, Percutaneous Approach",
+      "image": "http://dummyimage.com/161x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 9,
+      "gamesId": 3,
+      "name": "Alica",
+      "description": "Toxic effect of methanol, undetermined, initial encounter",
+      "abilities": "Fetal abnorm NOS-deliver",
+      "limitBreak": "Removal of Nonautologous Tissue Substitute from Trachea, Via Natural or Artificial Opening",
+      "image": "http://dummyimage.com/154x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 10,
+      "gamesId": 1,
+      "name": "Quentin",
+      "description": "Greenstick fx shaft of humer, r arm, subs for fx w nonunion",
+      "abilities": "Hydromyelia",
+      "limitBreak": "Drainage of Left Hip Muscle, Percutaneous Approach, Diagnostic",
+      "image": "http://dummyimage.com/114x100.png/ff4444/ffffff"
+    }
+  ],
+  "keyItems": [
+    {
+      "id": 1,
+      "game": "Drud",
+      "name": "Kiljan",
+      "description": "Hereditary erythropoietic porphyria"
+    },
+    {
+      "id": 2,
+      "game": "Jerri",
+      "name": "Lancett",
+      "description": "Unspecified superficial injury of left knee, init encntr"
+    },
+    {
+      "id": 3,
+      "game": "Clyve",
+      "name": "Bugs",
+      "description": "Unspecified injury of unspecified lower leg"
+    },
+    {
+      "id": 4,
+      "game": "Bordie",
+      "name": "Sands-Allan",
+      "description": "Unspecified injury of left lower leg, sequela"
+    },
+    {
+      "id": 5,
+      "game": "Rickie",
+      "name": "Cummine",
+      "description": "Contus/lac cereb, w LOC >24 hr w/o ret consc w surv"
+    },
+    {
+      "id": 6,
+      "game": "Nelia",
+      "name": "Fulham",
+      "description": "Snowboarder colliding with stationary object, init encntr"
+    },
+    {
+      "id": 7,
+      "game": "Danielle",
+      "name": "Magarrell",
+      "description": "Unspecified inflammatory spondylopathy"
+    },
+    {
+      "id": 8,
+      "game": "Jeannine",
+      "name": "Falk",
+      "description": "Contact with crocodile"
+    },
+    {
+      "id": 9,
+      "game": "Marchall",
+      "name": "Bartolijn",
+      "description": "Nondisp fx of med condyle of l tibia, 7thF"
+    },
+    {
+      "id": 10,
+      "game": "Beatrix",
+      "name": "Silk",
+      "description": "Strike wall of swimming pool causing drown, sequela"
+    }
+  ],
+  "battleItems": [
+    {
+      "id": 1,
+      "name": "Biodex",
+      "effect": "Other osteonecrosis, unspecified fibula"
+    },
+    {
+      "id": 2,
+      "name": "Fixflex",
+      "effect": "Intcran inj w LOC of 30 minutes or less, init"
+    },
+    {
+      "id": 3,
+      "name": "Sonsing",
+      "effect": "Unsp fracture of lower end of right humerus, init"
+    },
+    {
+      "id": 4,
+      "name": "Rank",
+      "effect": "Laceration of stomach, initial encounter"
+    },
+    {
+      "id": 5,
+      "name": "Treeflex",
+      "effect": "Postp hemor, hematoma and seroma of circ sys org fol a proc"
+    }
+  ],
+  "equipment": [
+    {
+      "id": 1,
+      "type": "Bytecard",
+      "name": "SALIX NIGRA POLLEN",
+      "description": "Underdosing of expectorants",
+      "effects": "Transab proctosigmoidosc"
+    },
+    {
+      "id": 2,
+      "type": "Keylex",
+      "name": "Venlafaxine Hydrochloride",
+      "description": "Disp fx of medial condyle of right femur, init for clos fx",
+      "effects": "Opn rep dir ing hern NEC"
+    },
+    {
+      "id": 3,
+      "type": "Stronghold",
+      "name": "Oxistat",
+      "description": "Unspecified fracture of upper end of unspecified ulna",
+      "effects": "Referral psych aftercare"
+    },
+    {
+      "id": 4,
+      "type": "Y-find",
+      "name": "Metoprolol Tartrate",
+      "description": "Unsp focal TBI w loss of consciousness of 31-59 min, sequela",
+      "effects": "Cervical biopsy NEC"
+    },
+    {
+      "id": 5,
+      "type": "Gembucket",
+      "name": "nevirapine",
+      "description": "Patient room in hospital as place",
+      "effects": "Cornea reconstruct NEC"
+    }
+  ],
+  "userGameNotes": [
+    {
+      "userNotes": "testing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "gamesId": 2,
+      "userId": 2,
+      "dateCreated": "12/15/2021, 11:34:31 AM",
+      "id": 15
+    },
+    {
+      "userNote": "Heck yeah!",
+      "gamesId": 2,
+      "userId": 2,
+      "dateCreated": "12/16/2021, 9:32:35 AM",
+      "id": 16
+    }
+  ],
+  "gameItems": [{
+    "id": 1,
+    "gamesId": 1,
+    "keyItemsId": 1,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 2,
+    "gamesId": 2,
+    "keyItemsId": 2,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 3,
+    "gamesId": 3,
+    "keyItemsId": 3,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 4,
+    "gamesId": 1,
+    "keyItemsId": 4,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 5,
+    "gamesId": 2,
+    "keyItemsId": 5,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 6,
+    "gamesId": 3,
+    "keyItemsId": 6,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 7,
+    "gamesId": 1,
+    "keyItemsId": 7,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 8,
+    "gamesId": 2,
+    "keyItemsId": 8,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 9,
+    "gamesId": 3,
+    "keyItemsId": 9,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 10,
+    "gamesId": 1,
+    "keyItemsId": 10,
+    "equipmentId": "",
+    "battleItemsId": ""
+  }, {
+    "id": 11,
+    "gamesId": 1,
+    "keyItemsId": "",
+    "equipmentId": 1,
+    "battleItemsId": ""
+  }, {
+    "id": 12,
+    "gamesId": 2,
+    "keyItemsId": "",
+    "equipmentId": 2,
+    "battleItemsId": ""
+  }, {
+    "id": 13,
+    "gamesId": 3,
+    "keyItemsId": "",
+    "equipmentId": 3,
+    "battleItemsId": ""
+  }, {
+    "id": 14,
+    "gamesId": 1,
+    "keyItemsId": "",
+    "equipmentId": 4,
+    "battleItemsId": ""
+  }, {
+    "id": 15,
+    "gamesId": 2,
+    "keyItemsId": "",
+    "equipmentId": 5,
+    "battleItemsId": ""
+  }, {
+    "id": 16,
+    "gamesId": 3,
+    "keyItemsId": "",
+    "equipmentId": "",
+    "battleItemsId": 1
+  }, {
+    "id": 17,
+    "gamesId": 1,
+    "keyItemsId": "",
+    "equipmentId": "",
+    "battleItemsId": 2
+  }, {
+    "id": 18,
+    "gamesId": 2,
+    "keyItemsId": "",
+    "equipmentId": "",
+    "battleItemsId": 3
+  }, {
+    "id": 19,
+    "gamesId": 3,
+    "keyItemsId": "",
+    "equipmentId": "",
+    "battleItemsId": 4
+  }, {
+    "id": 20,
+    "gamesId": 1,
+    "keyItemsId": "",
+    "equipmentId": "",
+    "battleItemsId": 5
+  }]
+}
