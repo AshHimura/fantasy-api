@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "Dion Stoade",
-      "address": "6866 4th Court",
+      "userName": "Dion Stoade",
+      "password": "6866 4th Court",
       "email": "dstoade0@cornell.edu"
     },
     {
@@ -17,6 +17,18 @@
       "email": "SummonerYuna@spira.com",
       "password": "Blitzball",
       "id": 3
+    },
+    {
+      "userName": "GalbadiaGardenStudent",
+      "email": "IrvirneK@galbadia.net",
+      "password": "test",
+      "id": 4
+    },
+    {
+      "userName": "Seed_Candidate",
+      "email": "Squall@balamb.net",
+      "password": "Gunblade",
+      "id": 5
     }
   ],
   "games": [
@@ -43,355 +55,873 @@
     {
       "id": 1,
       "gamesId": 1,
-      "name": "Leora",
-      "description": "Fx unsp part of scapula, r shoulder, subs for fx w nonunion",
-      "abilities": "Pressure ulcer, heel",
-      "limitBreak": "Removal of Nonautologous Tissue Substitute from Left Humeral Shaft, Percutaneous Approach",
-      "image": "http://dummyimage.com/134x100.png/dddddd/000000"
-    },
-    {
-      "id": 2,
-      "gamesId": 2,
-      "name": "Storm",
-      "description": "Unspecified open wound of vocal cord, sequela",
-      "abilities": "Amput foot, unilat-compl",
-      "limitBreak": "Replacement of Left Tarsal with Nonautologous Tissue Substitute, Percutaneous Approach",
-      "image": "http://dummyimage.com/200x100.png/dddddd/000000"
+      "name": "Terra Branford",
+      "description": "A mysterious young woman, born with the gift of magic, and enslaved by the Gestahlian Empire",
+      "abilityDescription": "Trance - transforms Terra into her Esper form which doubles the damage she deals & halves the magic damage she receives. Her ATB gauge is replaced with a green gauge that slowly decreases, and when it empties she turns back into a human. The length of time Terra can stay in Trance depends on the amount of Magic AP she has gained after battle. If she has not gained enough, she cannot enter Trance, and if her Trance gauge depletes during battle she will not be able to enter Trance in the next battle until she acquires enough Magic AP again. The maximum amount she can have is 255. Terra can also change back into a human at will with the Revert command.",
+      "abilities": [],
+      "limitBreakDescr": "Riot Blade - attacks a single enemy with magic damage with a power of 142. There's only a 1/16 chance of using it with the Attack command when at critical health",
+      "limitBreak": [],
+      "image": "https://bit.ly/3mfufnz"
     },
     {
       "id": 3,
-      "gamesId": 3,
-      "name": "Winfred",
-      "description": "Retained wood fragments",
-      "abilities": "Traum pneumothorax-close",
-      "limitBreak": "Restriction of Left External Carotid Artery with Extraluminal Device, Percutaneous Endoscopic Approach",
+      "gamesId": 1,
+      "name": "Locke Cole",
+      "description": "A treasure hunter and trail-worn traveler, searching the world over for relics of the past...",
+      "abilityDescription": "Steal/Mug - Allows Locke to steal itemas from enemies in battle while attacking.",
+      "abilities": [],
+      "limitBreakDescr": "Mirager - Locke attacks a single enemy, dealing magic damage with an attack power of 139",
+      "limitBreak": [],
       "image": "http://dummyimage.com/158x100.png/ff4444/ffffff"
     },
     {
       "id": 4,
       "gamesId": 1,
-      "name": "Arabella",
-      "description": "Injury of other nerves at hip and thigh level, right leg",
-      "abilities": "Plantar wart",
-      "limitBreak": "Reposition Ascending Colon, Via Natural or Artificial Opening",
+      "name": "Edgar Roni Figaro",
+      "description": "The young king of Figaro Castle, Imperial ally, and champion of the technological revolution...",
+      "abilityDescription": "Tools - Using a variety of weapons, Edgar is prepared for almost any encounter! His arsenal consists of:",
+      "abilities": [
+        "Auto Crossbow - Physical damage to all opponents. Attack Power is 125, is unblockable, ignores Split Damage.",
+        "NoiseBlaster - Inflicts Confuse on all opponents. Is unblockable, fails on opponents immune to Confuse.",
+        "BioBlaster - Poison-elemental damage on all enemies, inflicts Poison. Spell Power is 20, is unblockable, ignores Split Damage.",
+        "Flash - Non-elemental magic damage on all opponents, inflicts Blind. Spell Power is 42, is unblockable, ignores Split Damage.",
+        "Drill - Physical damage to one opponent. Attack Power is 191, is unblockable, ignores defense.",
+        "Chainsaw - Physical damage to one opponent. Attack Power is 252, is unblockable, ignores defense. 25% chance of inflicting Death instead, works against undead but fails on targets immune to Death. The Death attack is considered a magical attack.",
+        "Debilitator - Assigns a random elemental weakness to one opponent. Is unblockable. Air Anchor - Inflicts Heat to one opponent, will kill the target the next time it attacks. Is unblockable, but fails on enemies immune to Death."
+      ],
+      "limitBreakDescr": "Royal Shock - Deals non-elemental damage to a single enemy with an attack power of 143",
+      "limitBreak": [],
       "image": "http://dummyimage.com/141x100.png/dddddd/000000"
     },
     {
       "id": 5,
-      "gamesId": 2,
-      "name": "Ajay",
-      "description": "Injury of unspecified iliac vein, subsequent encounter",
-      "abilities": "Adv eff cns stimulnt NEC",
-      "limitBreak": "Computerized Tomography (CT Scan) of Abdominal Aorta using Other Contrast",
+      "gamesId": 1,
+      "name": "Sabin Rene Figaro",
+      "description": "Edgar's twin brother, who traded the throne for his own freedom...",
+      "abilityDescription": "Blitz - Various techniques executed by button input combinations. They deal damage based on Sabin's magic stat and aren't affected by any equipment he wears.",
+      "abilities": [
+        "Pummel - Unleashes a flurry of blows on a single enemy. Inflicts physical damage with a power of 110, ignores Defense.",
+        "AuraBolt - Blasts a single enemy with a bolt of holy energy. Has a spell power of 68.",
+        "Suplex - Hurls a single enemy into the ground, including trains! Inflicts physical damage with a power of 110, but power is halved if there are multiple enemies. Some enemies are immune.",
+        "Fire Dance - Engulfs all enemies in spiritual flame with a spell power of 42, ignores Split Damage.",
+        "Mantra - Restores some HP to all other party members equal to Sabin's current HP divided by the number of other party members, also cures Blind, Poison, Silence, Sap. A fun fact: If Sabin is confused and uses Mantra when there is one enemy, they are healed for 9,999 HP.",
+        "Air Blade - Slashes at all enemies with a cutting wind element magic and a spell power of 78, ignores Split Damage.",
+        "Spiraler - Sacrifices self to fully heal all other party members. In detail: Restores HP/MP of all party members & recovers from Blind, Zombie, Poison, Imp, Petrify, Doom, Silence, Berserk, Confuse, Sap, Sleep, Slow, Stop, and Frozen however, this drains Sabin's HP/MP & removes him from the battle entirely. Phantom Rush - Deals massive, non-elemental damage to a single enemy with a spell power of 128, ignores defense."
+      ],
+      "limitBreakDescr": "Tiger Break - Deals magical damage with a power of 140 to a single enemy.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/170x100.png/cc0000/ffffff"
     },
     {
       "id": 6,
-      "gamesId": 3,
-      "name": "Vallie",
-      "description": "Prsn brd/alit pedl cyc injured in collision w 2/3-whl mv",
-      "abilities": "Hair transplant",
-      "limitBreak": "Supplement Right Nipple with Synthetic Substitute, Percutaneous Approach",
+      "gamesId": 1,
+      "name": "Cyan Garamonde",
+      "description": "A noble warrior of a foreign land. A faithful retainer to his lord and master, he fears not even death...",
+      "abilityDescription": "Bushido - Swordplay techniques that are executed depending on a gauge that fills up to a number from one to 8. The longer the wait, the stronger the technique. The power of the attacks are set, their effectiveness doesn't change depending on the weapon use, and neither increasing Cyan's speed stat nor using Haste magic will speed up the rate the bushido gauge fills.",
+      "abilities": [
+        "Dispatch - Perform a rapid, unblockable sword thrust against a single enemy with a power of 120 & ignores defense.",
+        "Retort - Readies a devastating, non-elemental magical counterattack to unleash when next attacked physically. Has a spell power of 56, ignores defense, and is unblockable.",
+        "Slash - Channels focused ki energy through the samurai's blade to halve a single enemy's HP. This technique is unblockable and inflicts Sap, but fails on enemies immune to Death.",
+        "Quadra Slam - Performs a flowing, unblockable 4-strike physical combo while floating gracefully among enemies. Has a battle power of 72.",
+        "Empowerer - Manipulates the flow of ki energy to draw HP and MP from a single enemy. Heals undead enemies, has a spell power of 49 for HP damage, and has a spell power of 12 for MP damage.",
+        "Stunner - Shapes ki energy into a shower of unblockable, non-elemental blades, which rains down upon all enemies & inflicts Stop. This attack has a spell power of 97 & Stop has a hit rate of 140.",
+        "QuadraSlice - Unleashes a powerful, unblockable 4-strike physical combo against random opponents which ignores defense and has a battle power of 70.",
+        "Oblivion - Cleaves all enemies in two. Multiple effects: Inflicts death on all enemies, has a hit rate of 182, works against undead yet fails on enemies immune to Death, and stalls an enemy's final attack for one turn."
+      ],
+      "limitBreakDescr": "Back Blade - Deals magical damage with a power of 140 to a single enemy.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/244x100.png/5fa2dd/ffffff"
     },
     {
       "id": 7,
       "gamesId": 1,
-      "name": "Renard",
-      "description": "Burn of second degree of abdominal wall, initial encounter",
-      "abilities": "Iodine hypothyroidism",
-      "limitBreak": "Destruction of Facial Muscle, Open Approach",
+      "name": "Gau",
+      "description": "A youth draped in monster hides, his eyes shining with a warm and gentle light...",
+      "abilityDescription": "Rage - An ability where Gau emulates an enemy or boss monster. In this state, the player loses control over him until he is either KO'd, petrified, or the battle ends. Gau also has a 50% chance of using either a special attack or a monster ability. When emulating an enemy, Gau gains its  elemental immunities, weaknesses, and absorptions, as well as their status immunities, and innate statuses, such as Protect or Float. For example, if Gau Rages a Bomb, he will absorb Fire and be under Float or if Gau rages Magitek Armor, he will have the Protect status. These innate statuses cannot be dispelled as long as he is under the Rage status.",
+      "abilities": [],
+      "limitBreakDescr": "Gau is one of 2 characters to not have a limit break.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/129x100.png/dddddd/000000"
     },
     {
       "id": 8,
-      "gamesId": 2,
-      "name": "Stafford",
-      "description": "Unsp nondisp fx of 4th cervcal vert, subs for fx w nonunion",
-      "abilities": "Disloc 4th cerv vert-cl",
-      "limitBreak": "Drainage of Lumbar Vertebral Disc, Percutaneous Approach",
+      "gamesId": 1,
+      "name": "Celes Chere",
+      "description": "A Magitek knight forged by the Empire and tempered in battle. None have ever truly known the woman beneath the general's guise...",
+      "abilityDescription": "Runic - Absorbs magic and turns it into MP. Runic remains active until a spell is absorbed or another battle command is given. If the spell absorbed is an element Celes is weak to, the MP recovery doubles. If the spell absorbes is an element she resists, the MP recovery is halved. If Celes is immune to the element, she doesnt recover MP. If Celes absorbs an the element, she loses MP. Runic doesn't absorb spells auto-cast from weapons.",
+      "abilities": [],
+      "limitBreakDescr": "Spin Edge - Deals magical damage to a single enemy with a power of 143.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/161x100.png/ff4444/ffffff"
     },
     {
       "id": 9,
-      "gamesId": 3,
-      "name": "Alica",
-      "description": "Toxic effect of methanol, undetermined, initial encounter",
-      "abilities": "Fetal abnorm NOS-deliver",
-      "limitBreak": "Removal of Nonautologous Tissue Substitute from Trachea, Via Natural or Artificial Opening",
+      "gamesId": 1,
+      "name": "Setzer Gabbiani",
+      "description": "A gambling vagabond who finds freedom from society's narrow views of morality aboard his airship, the Blackjack...",
+      "abilityDescription": "Slot - 3 slot reels spin and the player stops them one by one. The outcome determines the attack Setzer uses, all attacks are unblockable, and based on Setzer's Magic Power.",
+      "abilities": [
+        "Lagomorph - Any losing combination of reels - Restores a small amount of HP to all allies & cures Darkness, Poison, and Sleep, doesn't ignore Magic Defense: characters with a high Magic Defense stat are healed for less, also doesn't damage the undead. Has a spell power of 10.",
+        "7-Flush -  3 reels of diamonds - With a spell power of 84, deals non-elemental magic damage to all enemies.",
+        "Chocobop - 3 reels of Chocobos - Has a spell power of 36, deals non-elemental damage to all enemies, ignores defense & split damage, and doesn't affect flying enemies.",
+        "H-Bomb - 3 reels of diamonds - Deals non-elemental magic damage to all enemies with a spell power of 130.",
+        "Sun Flare - 3 reels of a flying creature - Summons Bahamut, who uses Mega Flare to deal non-elemental magic damage to all enemies with a spell power of 92 & ignoring split damage.",
+        "Summon - Summons a random esper besides Odin, Raiden, and the GBA/mobile/Steam-exclusive espers. If this reel is mimicked, it calls the same esper as before.",
+        "Joker's Doom Version 1 - a reel of 7-7-Bar - Kills all allies, ignoring immunity to Death.",
+        "Joker's Doom Version 2 - 3 reels of 7 - Kills all enemies, ignoring immunity to Death. Cannot be used against some enemies, as the reels will not stop in the proper line-up."
+      ],
+      "limitBreakDescr": "Red Card - Deals magical damage to a single enemy with a power of 147.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/154x100.png/5fa2dd/ffffff"
     },
     {
       "id": 10,
       "gamesId": 1,
-      "name": "Quentin",
-      "description": "Greenstick fx shaft of humer, r arm, subs for fx w nonunion",
-      "abilities": "Hydromyelia",
-      "limitBreak": "Drainage of Left Hip Muscle, Percutaneous Approach, Diagnostic",
+      "name": "Strago Magus",
+      "description": "An elderly gentleman who has spent his whole life pursuing the secrets of monsters...",
+      "abilityDescription": "Lore - A blue mage ability that allows Strago to copy and use the magical abilities of specific monsters",
+      "abilities": [
+        "Condemned - Inflicts Doom on a single target & will be KO'd in twenty seconds.",
+        "Roulette - Spins a roulette wheel that randomly selects a single enemy or party member (including the caster) and inflicts Death on them.",
+        "CleanSweep - Deals Water-elemental damage to all enemies. Ignores Split Damage.",
+        "Aqua Rake - Deals Water and Wind-elemental damage to all enemies.",
+        "Aero - Deals Wind-elemental damage to all enemies.",
+        "1000 Needles - Deals exactly 1000 damage to a single target. Ignores defense.",
+        "Mighty Guard - Casts Protect and Shell on the party.",
+        "Revenge - Deals damage to a single enemy equal to the caster's maximum HP minus their current HP.",
+        "White Wind - Heals all party members including the caster by an amount of HP equal to the caster's HP.",
+        "Lv.5 Death - Casts Death on enemies whose levels are divisible by 5.",
+        "Lv.4 Flare - Casts Flare on enemies whose levels are divisible by 4.",
+        "Lv. 3 Confuse - Casts Confuse on enemies whose levels are divisible by 3.",
+        "Reflect??? - Inflicts Blind, Slow, and Silence on all enemies with the Reflect status.",
+        "Lv.? Holy - Deals Holy-elemental damage to all enemies with a level that is a multiple of the last digit of the party's current gil. Ignores Split Damage.",
+        "Step Mine - Deals damage to a single target equal to the number of steps taken throughout the game divided by thirty-two. The MP cost for character casters is (total minutes played) / 30 , and for enemy casters is 1.",
+        "Force Field - Chooses a random element and nullifies all attacks of that element, regardless of the user. Attacks with more than one element are unaffected, unless all the attack's elements are nullified.",
+        "Dischord - Halves a single target's level, reducing its stats. Fails on targets immune to Death.",
+        "Bad Breath - Inflicts Blind, Poison, Imp, Confuse, Sleep, and Silence on a single target.",
+        "Pep Up - Restores a single ally to full HP and MP and cures all status ailments, but at the cost of the caster's life & removes them from battle permanently.",
+        " Rippler - The target and the caster exchange all positive and negative statuses. Fails on targets immune to Imp.",
+        "Stone - Deals non-elemental damage to one or more targets and inflicts Confuse on them. Deals eight times as much damage on targets the same level as the caster.",
+        "Quasar - Calls down debris from outer space, dealing non-elemental damage to all enemies & ignoring their defense.",
+        "Grand Delta - Creates a triangular energy field that deals massive non-elemental damage to all enemies, ignoring their defense.",
+        "Exploder - Deals non-elemental damage to an enemy at the cost of the caster's own life equal to the caster's HP."
+      ],
+      "limitBreakDescr": "Sabre Soul - Inflicts Instant Death to one enemy, but fails on enemies immune to Instant Death.",
+      "limitBreak": [],
       "image": "http://dummyimage.com/114x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 21,
+      "gamesId": 1,
+      "name": "Relm Arrowny",
+      "description": "In her pictures she captures everything: forests, water, light... the very essence of the things she paints...",
+      "abilityDescription": "Sketch - Enables Relm to draw most monsters encountered and bring the drawings to life in order to attack her enemies. Success rate increases if she's wearing the Beret & only accessories that affect her damage output by a percentage instead of a direct boost affect the damage done by Sketch. Attacks that use HP, MP, or levels to determine damage use Relm's stats not the target's. If Sketch causes a spell such as Drain or Osmose, the HP or MP drained will be given to Relm. If Sketch causes a curative spell to be used, such as Cure or Esuna, the spell will be cast on the player's part, not on the enemies.",
+      "abilities": [],
+      "limitBreakDescr": "Star Prism - Inflicts Death to one enemy, but fails on enemies immune to Death.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/228x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 22,
+      "gamesId": 1,
+      "name": "Shadow",
+      "description": "He comes and goes like the wind, swearing allegiance to no one. Hidden behind his wintry gaze lies a face known to none who live...",
+      "abilityDescription": "Throw - Shadow can throw most weapons in inventory to deal unblockable damage which also ignores defense. The attack power of this ability is that of the thrown weapons. The only weapons that can't be thrown are the Valiant Knife, Atma/Ultima Weapon, Flame Rod, Ice Rod, Thunder Rod, Dice, and Fixed Dice",
+      "abilities": [],
+      "limitBreakDescr": "Shadow Fang - Shadow leaps towards his target and claws them, dealing non-elemental magic damage to a single enemy with a power of 140 and inflicting Sap.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/111x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 23,
+      "gamesId": 1,
+      "name": "Mog",
+      "description": "A moogle who speaks the words of men, and can summon the earth's power through his dance...",
+      "abilityDescription": "Dance - When Mog selects any of his 8 dances, he will randomly perform 1 of 4 abilities and the odds that a certain ability is performed are not equal. When Mog dances, the player loses control over him for the remainder of the fight until Mog is KO'd or petrified. If the selected Dance is of a different terraain from the terrain the party is fighting on, the terrain will change to that of the selected Dance. If Mog is not on the original terrain for the chosen Dance, there is a 50% chance Mog will 'Stumble' & will do nothing for that turn.",
+      "abilities": [
+        "Wind Song - Calls upon the power of the wind to attack enemies and heal allies. Abilities: Wind Slash, Sun Bath, Cockatrice, Plasma",
+        "Forest Suite - Calls upon the power of the forest to attack enemies and cure allies' status ailments. Abilities: Leaf Swirl, Harvester, Elf Fire, Wombat",
+        "Desert Aria - Calls upon the power of the desert to attack enemies and cast Hastega on allies. Abilities: Sandstorm, Antlion, Wind Slash, Meerkat",
+        "Love Sonata - Calls upon the power of love to attack enemies and cure allies' status ailments. Abilities: Elf Fire, Specter, Snare, Tapir",
+        "Earth Blues - Calls upon the power of the earth to attack enemies and heal allies. Abilities: Land Slide, Sonic Boom, Sun Bath, Boar Brigade",
+        "Water Rondo - Calls upon the power of the sea to heal allies and cure them of status ailments. Abilities: El Nino, Plasma, Specter, Wild Bear",
+        "Dusk Requium - Calls upon the power of darkness to attack enemies. Abilities: Cave In, Snare, Elf Fire, Poisonous Frog",
+        "Snowman Jazz - Calls upon the power of winter to attack enmies and heal allies. Abilities: Snowball, Avalanche, Snare, Arctic Hare",
+        "Wind Slash - Deals wind-elemental damage to all opponents. Its' Spell Power is 48, it is unblockable and it ignores Split Damage.",
+        "Sun Bath - Restores HP to all allies. Its Spell Power is 50.",
+        "Cockatrice - Deals non-elemental magic damage and inflicts Petrify on one opponent. Its Spell Power is 50 and its Hit Rate is 96. It fails on targets immune to Death.",
+        "Sandstorm - Deals wind-elemental damage to all opponents. Its Spell Power is 45 and its Hit Rate is 100, ignores Split Damage.",
+        "Antlion - Causes Death to one opponent. Its Hit Rate is 100 and will fail on targets immune to Death.",
+        "Meerkat - Casts Haste on all allies.",
+        "Leaf Swirl - Deals non-elemental magic damage to all opponents. Its Spell Power is 50, it is unblockable, and it ignores Split Damage.",
+        "Harvester - Recovers from Blind, Poison, Petrify, Silence, Confuse, Sap, Sleep, Slow, and Stop.",
+        "Wombat - Deals non-elemental magic damage to one opponent. Its Spell Power is 88, it is unblockable and it ignores defense. It will not hit flying targets.",
+        "Land Slide - Deals non-elemental magic damage to one opponent. Its Spell Power is 65, it is unblockable and it ignores defense.",
+        "Sonic Boom - Reduces one enemy's HP by 5/8 of its max HP, inflicts Sap and is unblockable, but fails on targets immune to Death.",
+        "Boar Brigade - Deals non-elemental magic damage to one opponent. Its Spell Power is 53, it is unblockable, and it ignores defense. It will not hit flying targets.",
+        "Elf Fire - Deals fire-elemental damage to one opponent. Its Spell Power is 72 and it is unblockable.",
+        "Specter - Causes Confuse on one opponent. Its Hit Rate is 120, and it fails on targets immune to confusion.",
+        "Tapir - Recovers from Blind, Zombie, Poison, Imp, Petrify, Doom, Silence, Berserk, Confuse, Sap, Sleep, Slow, and Stop. Targets afflicted with Sleep will have their HP and MP fully restored, even if the target is undead.",
+        "Cave In - Reduces one target's HP by 3/4 of its current amount and causes Sap. It is unblockable, but it will fail on targets immune to Death.",
+        "Snare - Causes Death to one opponent. Its Hit Rate is 100, and it will fail on targets immune to Death. It works against the undead, and stalls final attacks for one turn.",
+        "Poisonous Frog - Deals poison-elemental damage and inflicts Poison on one opponent. Its Spell Power is 56 and it is unblockable.",
+        "El Nino - Deals water-elemental damage to all opponents. Its Spell Power is 61, it is unblockable, and it ignores Split Damage.",
+        "Plasma - Deals lightning-elemental damage to one opponent. Its Spell Power is 70 and it is unblockable.",
+        "Wild Bear - Restores HP to all allies and recovers from Blind, Zombie, Poison, Petrify, Doom, Silence, Berserk, Confuse, Sap, Sleep, Slow, Stop, and Frozen. Its Spell Power is 100.",
+        "Snowball - Reduces a target's HP by 1/2. Its Hit Rate is 100, and it will fail on targets immune to Death.",
+        "Avalanche - Deals ice-Elemental damage to all opponents. Its Spell Power is 55, it is unblockable, and it ignores Split Damage.",
+        "Artic Hare - Restore HP to allies. Its spell power is 45."
+      ],
+      "limitBreakDescr": "Moogle Rush - Deals non-elemental magic damage to one opponent with a power of 150.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/203x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 24,
+      "gamesId": 1,
+      "name": "Gogo",
+      "description": "A man shrouded in strange clothing... Or perhaps a woman? Perhaps not even human at all...",
+      "abilityDescription": "Mimic - Enables Gogo to mime the last action used. When mimicking spell use (including espers), Gogo uses no MP, and when mimicking item use or the Throw command, no items are expended from the inventory. However, mimicking Gil Toss still uses up gil. If Mimic is used directly after Interceptor counterattacks for Shadow, Gogo will call Interceptor for the same attack. Gogo cannot mimic Desperation Attacks/Limit Breaks, Terra's Trance command, or the commands Magitek, Health, Possess, and Shock. If nobody has taken any action yet, and Gogo uses Mimic, Attack will be used.",
+      "abilities": [],
+      "limitBreakDescr": "Punishing Metor - Only usable when Gogo has the Attack command equipped, deals non-elemental magical damage to a single enemy with a power of 146.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/120x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 25,
+      "gamesId": 1,
+      "name": "Umaro",
+      "description": "A yeti with a love for bone carvings. Stronger than a gigas... but a bit unruly.",
+      "abilityDescription": "Rage - A beserk state, it causes Umaro to act on his own and cannot be given commands. This ability is automatically activated as long as Umaro is on the field and will not end unless he is KO'd (will re-activate when revived).",
+      "abilities": [
+        "Attack - A basic attack, dependent on Umaro's strength & attack stats.",
+        "Body Blow - Umaro throws himself at an enemy, ignoring their defense.",
+        "Body Blow 2 - With the Beserker Ring equipped, Umaro may throw an ally insead of himself. It ignores defense, but the power is determined by the thrown ally's equipment instead. If the thrown character is affected by Sleep or Confuse, they take priority to be thrown and will be cured afterward",
+        "Snowstorm - With the Blizzard Orb equipped, Umaro can use an ice-element magic attack with a power of 100 that hits all enemies & consumes 20 MP."
+      ],
+      "limitBreakDescr": "Umaro is one of 2 characters to not have a limit break.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/101x100.png/dddddd/000000"
+    },
+    {
+      "id": 2,
+      "gamesId": 2,
+      "name": "Tidus",
+      "description": "Star player of the Zanarkand Abes. His attacks lack some power due to his inexperience with the sword. Speed is his greatest asset.",
+      "abilityDescription": "No particularly unique abilities, can use magic, and learn abilities like the rest of the party. Abilities associated with Tidus such as Cheer, Flee, Provoke, or Delay Attack can be learned from the sphere grid.",
+      "abilities": [
+        "Cheer - Raises party's attack & defense.", 
+        "Flee - Aids the party in escaping from battle.",
+        "Provoke - Draws an enemy's attack toward the user.",
+        "Delay Attack - Delays target's next turn.",
+        "Delay Buster - Greatly delays the target's next turn."
+      ],
+      "limitBreakDescr": "Swordplay - When executed, a meter and a count-down timer appear. At the center of the meter is a small, gold-colored space, which the player must try to hit by pressing X when the marker is within its borders to do additional damage.",
+      "limitBreak": [
+        "1 - Sprial Cut: Tidus does a series of flips and cartwheels towards one enemy, leaping up and slamming his sword down on them. Underwater, Tidus does not do the spin. Tidus starts with this Overdrive.", 
+        "2 - Slice & Dice: Tidus runs back and forth around enemies, attacking six random targets (three if the meter is not stopped). Underwater, Tidus does the same thing. If only one enemy is present, it will become the target of all six/three attacks. Tidus learns this Overdrive after executing 10 Overdrives, regardless of success.", 
+        "3 - Energy Rain: Tidus runs forward and jumps off one enemy into the air, then charges his weapon with energy and swings it to fire energy blasts at all enemies. Underwater, Tidus just unleashes the beams of energy. Tidus learns this Overdrive after executing 30 Overdrives, regardless of success (cumulative amount of times).", 
+        "4 - Blitz Ace: Tidus charges, then leaps at one enemy in slow-motion. He executes eight sword attacks on the enemy, plants his sword in the ground and leaps into the air, using the hilt of the planted sword as leverage. A party member (Yuna, Lulu, or Rikku, depending on affection mechanics) throws a blitzball to him, and the Overdrive meter appears. If the meter is stopped Tidus kicks the ball at the enemy, which explodes on contact. If the meter is not stopped Tidus misses the kick and falls to the ground. If the Overdrive is performed underwater, Tidus will simply swim away and kick the ball. Tidus learns this Overdrive after executing 80 Overdrives, regardless of success (cumulative amount of times)."],
+      "image": "http://dummyimage.com/200x100.png/dddddd/000000"
+    },
+    {
+      "id": 26,
+      "gamesId": 2,
+      "name": "Yuna",
+      "description": "Daughter of High Summoner Braska. Honest and determined, Yuna embarks on a pilgrimage to obtain the Final Aeon and defeat Sin. Yuna is learning the mystical art of summoning aeons—powerful spirits of yore.",
+      "abilityDescription": "Summon - Allows Yuna to call on Aeons to aid her in battle. The Aeon summoned replaces the entire party until either dismissed by the player or KO'd. Yuna also functions as the party's white mage in the beginning of the game, as such her associated abilities from the sphere grid consists of techniques like Cure, Auto-Life, and Holy.",
+      "abilities": [
+              "Valefor - The first Aeon acquired by Yuna, she is known for her high evasion and speed stats. She can deal non-elemental damage and cause a turn delay for certain enemies with her special attackm Sonic Wings. Valefor is the only Aeon to have two Overdrives, both dealing non-elemental damage: the default - Energy Ray & the more powerful Energy Blast. If KO'd, she will self-revive after 8 battles.",
+              "Ifrit - The fire-elemental and 2nd Aeon acquired, he excells in defense and can be healed by using fire element spells on himself. Ifrit's special attack is Meteor Strike is non-elemental and bypasses any enemy that has Protect active. His Overdrive, Hellfire, is a powerful Fire assault in which Ifrit hurls fireballs at the enemy, and finishes by throwing a chunk of earth at them. Will self-revive after 12 battles.",
+              "Ixion - The lightning elemental and 3rd Aeon acquired, Ixion is known for his high Magic and Magic Defense and can heal by using lightning element spells on himself. Ixion's special attack, Aerospark, deals damage & dispells all positive status enhancements (except Auto-Life) from his target. His Overdrive, Thor's Hammer, encases all enemies in a field of electricity and sends it crashing into every other enemy on the field. Will self-revive after 20 battles.",
+              "Shiva - The ice elemental and 4th Aeon acquired, she is known for her high evasion and speed and can heal by using ice element spells on herself. Her special attack, Heavmly Strike, deals non-elemental damage and inflicts the Threaten status (doesnt inflict Delay like the in-game description states). Her Overdrive, Diamond Dust, freezes the battlefield along with the opposition & with a snap of her fingers, the ice shatters, dealing Ice damage to all enemies. Will self-revive after 20 battles.",
+              "Bahamut - The 5th and final mandatory Aeon, he is considered the strongest summon storyline wiseand isn't affiliated with any particular element. His special attack,Impulse, just deals non-elemental damage to all enemies on the field. His Overdrive, Mega Flare, blows up the battlefield and deals massive non-elemental damage to all enemies in its path. Will self-revive after 24 battles.",
+              "Anima - One of the optional Aeons that can be obtained, Anima is know to be exceptionally powerful. Her special attack, Pain, deals high amounts of damage and can inflict instant death to a single enemy. Her Overdrive, Oblivion, deals massive damage to all enemies & in the PAL, International, and HD Remaster versions of Final Fantasy X, Oblivion deals 16 hits of damage as opposed to just one instance of damage like in the original Japanese and North American releases. Will self-revive after 24 battles.",
+              "Yojimbo - Another optional Aeon, Yojimbo is unique in that the player must pay typically more than 200,000 gil in order to obtain him in the first place and must pay him in order for him to attack. The more money given, the better the attacks. Frequently summoning and paying large amounts of money makes it more likely for Yojimbo to use his stronger attacks. His special attacks consist of Daigoro - where his dog rushes to attack an enemy, Kozuka - where Yojimbo throws kunai knives at a single enemy, and Wakizashi - where he slashes at a single enemy or all enemies on the field dealing non-elemental damage. His Overdrive, Zanmato, is an instant kill move which defeats all opponents including all bosses and superbosses. However, a full Overdrive bar doesn't guarantee Yojimbo will use his overdrive when paid though it does guarantee better attacks used by Yojimbo while summoned. Will self-revive after 24 battles.",
+              "Cindy, Sandy, and Mindy: The Magus Sisters - The final optional Aeons and can only be obtained by acquiring all other aeons, the Blossom Crown, and the Flower Sceptre. The Magus Sisters are unique as they are 3 Aeons in one and the player can't completely control them. Cindy - known for her white magic, Sandy - known for her strong physical attacks + supporting white magic, and Mindy - known for her black magic, can only be 'suggested' actions to take which could result in them having a rest (skipping their turn) or casting cure on another sister who may need a much stronger healing spell. Cindy's special attack is Camisade & Sandy's special attack is Razzia, both dealing physical damage to a single enemy. Mindy's special attack, Passado, is one of the most powerful attack in the game and deals 15 hits of physical damage to a single target. To use their Overdrive, Delta Attack, each sister's overdrive gauge must be filled & the command 'Combine powers!' must be selected. It deals high damage to all enemies in one attack in the original US and Japanese versions or deals 6 hits of damage like in the PAL, International, and HD Remaster versions. Will self-revive after 30 battles."
+      ],
+      "limitBreakDescr": "Grand Summon - enables Yuna to immediately summon an Aeon with its' overdrive bar full allowing them to immediately use their Overdrive. The Aeon overdrive can be used twice if the Aeon's overdrive bar is already full when Yuna uses Grand Summon. The one exception is Yojimbo who has a higher chance of using Zanmato rather than just immediately using it.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/135x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 27,
+      "gamesId": 2,
+      "name": "Auron",
+      "description": "The legendary guardian who, along with Jecht, joined High Summoner Braska on his journey to vanquish Sin ten years ago. After their victory, he left Spira for Zanarkand to watch over Tidus. Formerly a warrior monk, he once protected the temples of Yevon",
+      "abilityDescription": "Auron specializes in break abilities that lower enemies' stats, and guard abilities to shield his comrades from enemy attacks.",
+      "abilities": [
+        "Power Break - Damages opponent & halves their strength.",
+        "Magic Break - Damages opponent & halves their Magic strength.",
+        "Mental Break - Damages opponent & sets their Magic Defense to 0.",
+        "Armor Break - Damages opponent, sets opponent's Defense to 0, & nullifies their Armored status.",
+        "Guard - Intercepts physical attacks on the party, remains in effect until next turn.",
+        "Threaten - Inflicts the status of Threaten on an enemy, immobilizing them and preventing them from acting until the caster's next turn. Threatened enemies cannot counterattack, but can still evade attacks.",
+        "Entrust - Transfersuser's overdrive charge to an ally's gauge.",
+        "Sentinel - Intercepts physical attacks on the party & user takes a defensive stance which halves damage from all physical attacks, remains in effect until next turn.",
+        "Zombie Attack - Damages opponent & inflicts Zombie status on a single enemy."
+      ],
+      "limitBreakDescr": "Bushido - A sword technique where its' power and abilites are determined by inputting a button sequence within a time limit. If the button sequence is failed, Auron will perform just the regular move, but if input successfully, Bushido will be performed with more attack power & added status effects. The faster the button input is entered, the more damage the Overdrive will deal.",
+      "limitBreak": [
+        "Dragon Fang - Auron jumps into the air before plunging his blade into the ground, erupting explosions onto the opposition. Inflicts damage on all enemies. If button sequence input is successful, it delays the enemies' turn.", 
+        "Shooting Star - Auron dashes onto the enemy, and performs a swift powerful blow onto the opponent. Inflicts heavy damage on one enemy. If button sequence input is successful, the enemy is ejected from the battlefield.",
+        "Banishing Blade - Auron takes a sip from his jug, and readies the latent powers of his sword, before unleashing them in a swing. Inflicts heavy damage on one enemy. If button sequence input is successful, he will enchant his blade upon spraying it with alcohol, causing Full Break(Power Break, Magic Break, Armor Break, and Mental Break simultaneously) on the opponent.",
+        "Tornado - Auron creates a tornado before launching it onto the opposition. Inflicts heavy damage on all enemies. If button sequence input is successful, enemies are damaged more heavily upon Auron igniting the tornado with his jug of alcohol. (Enemies are damaged twice in the International/PAL/HD versions.)"
+      ],
+      "image": "http://dummyimage.com/105x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 28,
+      "gamesId": 2,
+      "name": "Kimahri Ronso",
+      "description": "A Ronso youth with a gift for mastering enemies' abilities, he abandoned his homeland over ten years ago and now he watches over Yuna. He speaks only to those he deems worthy, but his fierce appearance belies a gentle heart.",
+      "abilityDescription": "Effectively, Kimahri functions as a sort of Dragoon and a Blue Mage - where his specialty is learning enemy techniques and using them as his Limit Break. Notable abilities are Lancet, Scan, Jinx, and Ultima.",
+      "abilities": [
+        "Lancet - Absorbs HP and MP from a single enemy, allows Kimahri to absorb a Ronso Rage from a specific enemy.",
+        "Scan - Displays stats & weaknesses of enemies.",
+        "Jinx - Lowers the Luck stat of all enemies on the battlefield.",
+        "Ultima - The ultimate black magic spell, deals heavy non-elemental magic damage."
+      ],
+      "limitBreakDescr": "Ronso Rage - Enables Kimahri to use fiend abilities in battles.",
+      "limitBreak": [
+        "Jump -Available from the begin game, Kimahri jumps into the air and damages a single enemy.",
+        "Seed Cannon - Rapidly spits seeds in order to deal damage to a single enemy.",
+        "Self-Destruct - Sacrifices life to deal severe damage to one enemy. Kimahri cannot be resurrected or replaced in the active party until the battle is over.",
+        "Fire Breath - Breathes fire to deal fire-element damage to all enemies.",
+        "Stone Breath - Breath that petrifies all enemies.",
+        "Aqua Breath - Aquatic breath that deals water-elemental damage to all enemies.",
+        "Thrust Kick - Deals damage to one enemy. Due to a programming error, this attack does not inflict Eject, it only deals damage.",
+        "Bad Breath - Inflicts random status ailments on all enemies. These are: Poison, Sleep, Silence, Confuse, Berserk and Darkness (for 10 turns).",
+        "Doom - When cast on one enemy, the enemy dies after X number of turns. The stronger the enemy, the higher the count starts, taking 200 or so turns to count down from the most powerful enemies.",
+        "White Wind - Restores HP to all party members.",
+        "Mighty Guard - Bestows Protect, Shell, and NulAll(Immunity to fire, ice, lightning, and water magic after their first use) on the party.",
+        "Nova - Deals massive non-elemental damage to all enemies."
+      ],
+      "image": "http://dummyimage.com/249x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 30,
+      "gamesId": 2,
+      "name": "Wakka",
+      "description": "Yuna's blitzball-toting guardian. His training has honed the accuracy and power of his shots, which can take down both fast-flying fiends and enemies afar. He's a competent and versatile fighter, but he has yet to win an argument with Lulu.",
+      "abilityDescription": "The ranged fighter of the group, Wakka's native abilities focus on inflicting status effects and draining HP/MP.",
+      "abilities": [
+        "Dark Attack - Inflicts Darkness to an enemy for three turns.",
+        "Sleep Attack - Puts an enemy to Sleep for three turns.",
+        "Silence Attack - Inflicts Silence to an enemy for three turns.",
+        "Drain - Absorbs HP from target to restore own HP.",
+        "Aim - Raises party's accuracy.",
+        "Osmose - Absorbs MP from target to restore own MP.",
+        "Dark Buster - Always inflicts Darkness on an enemy for 1 turn.",
+        "Sleep Buster - Always inflicts Sleep on an enemy for 1 turn.",
+        "Silence Buster - Always inflicts Silence on an enemy for 1 turn.",
+        "Triple Foul - Inflicts Darkness, Silence and Sleep on an enemy for 3 turns."
+        
+      ],
+      "limitBreakDescr": "Slots - with 3 different slots on the reels, whatever is selected affects the outcome of the attack differently. Aligning all 3 reels doubles the effect.",
+      "limitBreak": [
+        "Element Reels - In Element Reels, the slots are spun with the four magic elements: water, fire, lightning, and ice. If 3 of the same icons are lined up (Fire-Fire-Fire), Wakka unleashes a blitzball attack of that element on all enemies. If 2/3 match, he unleashes one attack at a random enemy with that element. If no reels match, Wakka attacks a random enemy with a stronger than normal attack.",
+        "Attack Reels -  In Attack Reels, the slots are spun with attack multipliers: 1 Hit, 2 Hit, and Miss. How many stopped multipliers determines how many attacks occur. Example: If Wakka lines up 1 Hit, 1 Hit, 2 Hit - then he would attack random enemies four times. If the slots symbols are all the same, the attack is doubled: 3 matching 2 Hit slots causes wakka to attack 12 times (6 attacks because of 3 '2 hit' reels  selected x 2 for the reels matching).",
+        "Status Reels - In Status Reels, the slots a spun witht 3 different symbols representing different types of status effects. Matching 3 reels of the same symbol will cause Wakka to attack all enemies, whereas matching only 2 will only affect a single random enemy. The attack will inflict status ailments depending on the selected symbol. If no reels match, Wakka will attack a random enemy with a stronger than normal attack. The Skull symbol inflicts Poison, as well as Sleep, Silence and Darkness for three rounds, the Down symbol inflicts Full Break, and the Egg-timer symbol inflicts Petrification, or if the enemy or enemies are immune, it delays their next turn considerably and inflicts Slow, if possible, to those with the haste status, thereby removing it.",
+        "Aurochs Reels - In Aurochs Reels, the slots are spun with random combinations of the Element and Status Reels. If 3  Besaid Aurochs symbols are lined up, Wakka will unleash a huge non-elemental, non-status attack on all enemies."
+      ],
+      "image": "http://dummyimage.com/239x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 11,
+      "gamesId": 2,
+      "name": "Lulu",
+      "description": "Yuna's guardian, and an accomplished black mage. She's guarded two summoners before Yuna, and learned much from those pilgrimages. No one, not even Wakka, knows how she controls the puppets she uses as weapons.",
+      "abilityDescription": "As the resident black mage of the group, Lulu's abilities primarily consist of all levels of the elemental spells, non-elemental spells, and spells to enhance abilities.",
+      "abilities": [
+        "Elemental Spells - All 3 levels of Fire, Water, Thunder, and Blizard magics.",
+        "Bio - Inflicts poison on an enemy.",
+        "Death - Inflicts Death on an enemy",
+        "Demi - Reduces current HP of target party by 1/4.",
+        "Flare - Extreme non-elemental damage.",
+        "Focus - Raises party's magic & magic defense.",
+        "Reflex - Raises party's evasion.",
+        "Doublecast - Allows character to cast Blk Magic spells twice."
+      ],
+      "limitBreakDescr": "Fury - Allows Lulu to cast a barrage of Blk Magic spells in a single attack, depending on how quickly the player can rotate the right analogue stick.",
+      "limitBreak": [
+        "Each spell cast is weaker than normal, but they ignore the rules of normal Black Magic spell use. The can be used even when silenced, bypass Reflect & Shell, and the chosen spell doesn't consume MP. "
+      ],
+      "image": "http://dummyimage.com/126x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 12,
+      "gamesId": 2,
+      "name": "Rikku",
+      "description": "A young Al Bhed girl. Her personality is upbeat and positive, and she is not afraid to speak her mind. She works hard to restore her outcast people to their former glory. Rikku handles mechanical enemies with ease, and can steal items from enemies, too.",
+      "abilityDescription": "As the thief class of the party, Riku's abilities focus mainly on stealing, Gil based attacks, and unique support abilities.",
+      "abilities": [
+        "Use - Allows Rikku to use specialty items in battle such as grenades, mines, & Al Bhed potions.",
+        "Steal - Enables Rikku to steal items from enemies and dismantles/destroys minor machina enemies.",
+        "Luck - Raises party's luck stat.",
+        "Spare Change - Attacks a single enemy by throwing gil, counted as special damage instead of physical or magical. ",
+        "Mug - Attacks an enemy and steals items at the same time.",
+        "Bribe - Pays an enemy to make it go away and give up items.",
+        "Copycat - Mimic an ally's previous action.",
+        "Full-Life - Revives a KO'd party member with max HP.",
+        "Pilfer Gil - Steals gil from an enemy."
+      ],
+      "limitBreakDescr": "Mix - Allows Rikku to combine any two items for a variety of effects. Every item in normal inventory can be mixed, though many combinations lead to the same result.",
+      "limitBreak": [],
+      "image": "http://dummyimage.com/145x100.png/5fa2dd/ffffff"
+    },
+    {
+      "id": 13,
+      "gamesId": 3,
+      "name": "Cloud Strife",
+      "description": "Former First Class SOLDIER. After defecting from Shinra, Cloud began work as a mercenary for hire in Midgar. With his trusty broadsword in hand, he always gets the job done.",
+      "abilityDescription": "Cloud's weapon abilities consist of varying sword moves that deal raw damage to the enemy in unique ways. His abilities are mostly straightforward, taking advantage of Cloud's increased melee range and power. The vast majority of his abilities are physical damage attacks. He also two modes of attack: Operator Mode - Cloud's default mode, it provides mobility, a good mix of offense and defense, and he will automatically switch to this mode when dodge-rolling. Punisher Mode - In this mode, Cloud's moment speed is greatly reduced, but he gets a great trade off. His attack damage and attack speed is increased as well as gaining the ability to counterattack melee attacks used against him",
+      "abilities": [
+        "Braver - Costing 1 ATB charge, Cloud jumps into the air and strikes his foe with a powerful attack, leaving behind a trail of light and dealing burst damage in an area of effect.",
+        "Focused thrust - Costing 1 ATB charge, Cloud lunges toward an enemy with a piercing strike that hits multiple times - Significantly increases enemy's stagger gauge and pushes away smaller enemies, which can isolate them from more dangerous enemies.",
+        "Triple Slash - Costing 1 ATB charge, Cloud slashes three enemies in quick succession, dealing more damage with each blow. Not as powerful against a single enemy.",
+        "Disorder - Costing 1 ATB charge, Cloud delivers a devastating attack and switches attack modes in one fluid motion. The attack motion differs depending on whether Cloud is currently in Operator Mode or Punisher Mode.",
+        "Infinity's End - Costing 2 ATB charges, Cloud winds up and unleashes an overhead strike - Increased damage on staggered enemies.",
+        "Blade Burst - Costing 1 ATB charge, Cloud unleashes a wave of non-elemental mako energy at an enemy in front of him with a slash of his sword.",
+        "Counterstance - Costing 1 ATB charge, Cloud braces for attacks and retaliates with a powerful slash."
+      ],
+      "limitBreakDescr": "Cloud's limit breaks are focused on melee damage and benefit from any attribute boosts to his attack power & strength.",
+      "limitBreak": [
+        "Cross-Slash - Cloud lunges forward and slices three times with his sword, forming an ominous symbol. Each slice deals separate damage, though the last deals over twice that of the first two.",
+        "Ascension - Cloud lunges forward followed by seven slashes with his blade. For his final eighth slash, Cloud drags the sword up in the air as he leaps up and then crashes down, dealing considerably more damage than the prior hits. This move increases an enemy's stagger gauge significantly."
+      ],
+      "image": "http://dummyimage.com/222x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 14,
+      "gamesId": 3,
+      "name": "Barret Wallace",
+      "description": "A faction leader of the anti-Shinra militant group Avalanche. Barret is filled with a burning hatred for Shinra, a company he claims is destroying the planet. His right arm has been modified into a firearm, allowing him to attack his enemies at long range.",
+      "abilityDescription": "Barrets's abilities vary from those that deal physical damage to those that help draw enemy fire away from team mates. His damaging abilities are either ranged attacks that strike enemies from afar, or melee attacks that take a while to wind up, but deal devastating blows and knock down enemies. Many of these attacks can consume all ATB charges to deal more than double damage. Almost all his abilities grant him super-armor, preventing him from being interrupted by weaker enemy attacks.",
+      "abilities": [
+        "Steelskin - Consumes 1 ATB charge and temporarily reduces damage taken + how easily Barret is interrupted. He'll receive 30% less damage and won't be phased by 'small attacks' (for 90 seconds).",
+        "Focused Shot - Consumes all ATB charges to unleash a concentrated burst of energy. Significantly increases enemy stagger.",
+        "Lifesaver - Consuming  1 ATB charge, Barret takes damage intended for other party members, active for 120 seconds.",
+        "Maximum Fury - Consumes all ATB charges to fire a long stream of bullets at a single enemy.",
+        "Charging Uppercut - Consuming  1 ATB charge, Barret rushes towards an enemy and launches them into the air with a furious blow - increases Barret's Charge gauge.",
+        "Smackdown - Consuming  1 ATB charge, Barret strikes the ground and sends nearby enemies flying.",
+        "Point Blank - Consumes all ATB charges to deliver a close-range attack and send enemies flying."
+      ],
+      "limitBreakDescr": "Barret's limit breaks are physical based and aimed at a single target, but they have a wide area-of-effect and can hit nearby targets. He is normally better off waiting until an enemy is staggered to fully optimize his damage output.",
+      "limitBreak": [
+        "Fire in the Hole - Shoots an orb of energy that creates a large explosion.",
+        "Catastrophe - Barret marshalls all his strength and channels it into a concentrated beam of energy, significantly increases enemy stagger."
+      ],
+      "image": "http://dummyimage.com/197x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 15,
+      "gamesId": 15,
+      "name": "Aerith Gainsborough",
+      "description": "A flower peddler living in the Sector 5 slums, Aerith has been under Shinra surveillance all her life because of her unique background. Capable of sensing the planet's life force, she offers magical support to her comrades.",
+      "abilityDescription": "Aerith's abilities give her and the party several options, ranging from double-casting offensive/healing abilities to protecting allies from projectiles. She has plenty of offensive options to help her conserve MP, however, a few of her abilities are costly to cast in terms of ATB.",
+      "abilities": [
+        "Soul Drain - Consuming 1 ATB charge, Aerith unleashes an attack that absorbs uo to 3% MP. Absorbs 15% MP from staggered enemies.",
+        "Arcane Ward - Consuming 1 ATB charge, Conjures a ward that lasts 180 seconds. Attack spells cast within the ward will automatically be cast twice.",
+        "Sorcerous Storm - Consuming 1 ATB charge, Deals non-elemental magic damage in a large radius to nearby enemies.",
+        "Fleeting Familiar - Consuming 1 ATB charge, Aerith summons a fairy that attacks your enemies periodically as well as after you use abilities and spells. The familiar lasts 240 seconds.",
+        "Ray of Judgement - Consuming 2 ATB charges, Aerith fires an energy burst from ger staff that hits multiple times & increases stagger damage bonus.",
+        "Lustrous Shield - Consuming 1 ATB charge, Aerith conjures a magical flower that acts as a shield, capable of blocking enemies' projectiles while also damaging the foes that come into contact with it. Lasts 2 minutes and can have up to 3 at once.",
+        "ATB Ward - Consuming 2 ATB charges, Aerith will Conjure a magical ward that lasts 4 minutes & any allies who use ATB charges within it regain partial ATB from your gauge."
+      ],
+      "limitBreakDescr": "Aerith is the the only party member whose limit breaks provide utility instead of damage output. Her limit breaks are used to aid the party's survivability in tough situations, though they have different purposes.",
+      "limitBreak": [
+        "Healing Wind - Summons a soothing breeze to restore 50% of max HP to all party members.",
+        "Planet's Protection - Entreat the planet's favor to nullify physical damage dealt to all party members for 1 minute 30 seconds. "
+      ],
+      "image": "http://dummyimage.com/214x100.png/cc0000/ffffff"
+    },
+    {
+      "id": 16,
+      "gamesId": 16,
+      "name": "Tifa Lockhart",
+      "description": "A member of the anti-Shinra militant group Avalanche. Tifa manages Seventh Heaven, a bar located in the Sector 7 slums. A student of Zangan-style martial arts, she can clobber opponents with her fleet-footed combat techniques.",
+      "abilityDescription": "Tifa's abilities make use of her high mobility, allowing her to move in and out of combat, and to close gaps between her and her opponents easily. Her abilities can be performed together in quick succession as a combo to easily build opponents' stagger gauge. All of her techniques cost 1 ATB charge.",
+      "abilities": [
+        "Unbridled Strength - Increases Tifa's chi, boosting her normal attacks and allowing her to cycle between three martial techniques: Whirling Uppercut, Omnistrike, and Rise & Fall. Whirling Uppercut is an uppercut punch to a single target, Omnistrike is a shoulder bash that deals area-of-effect damage, while Rise and Fall causes her to leap towards a target with kicks.",
+        "Divekick - Tifa jumps into the air, spins, and slams down with her feet, kicking the ground, dealing strong physical damage and has a wide area-of-effect.",
+        "Overpower - Tifa runs towards an enemy, then leaps forward feet first, and performs three kicks, somersaulting after the third to land back on the ground. She will be able to follow this up with an attack combo that differs depending on her current Chi Level, which allows it to more effectively pressure and interrupt enemies.",
+        "Focused Strike - Tifa jumps backward to dodge an attack, before leaping forward and striking an opponent, raising to the air before then dropping back down. Doing so evades an attack, greatly increases an opponent's stagger gauge, and recovers ATB after use, allowing her to use another ability afterward.",
+        "Starshower - Tifa strikes a battle pose at an opponent and stands in place, before leaping into a flurry of attacks, and then performing a combo of nine strikes that surround the enemy, dealing increasingly higher damage, pummeling her target from above. The final strike lands in front of an enemy, dealing high area-of-effect damage. After using Starshower, follow-up attacks can deal extra damage. During Starshower's animation, Tifa is evasive and will be highly resistant to being interrupted by enemies.",
+        "Chi Trap - Tifa launches a floating orb of materialized chi from her arm, which remains in place, dealing sustained magic damage over time to nearby enemies within its proximity. It can be used to damage a pack of enemies clustered together, or to supplement her existing damage to a nearby enemy.",
+        "True Strike - Tifa briefly charges up a punch before launching it at an enemy, dealing considerable damage and provides a large +30% increase to an enemy's stagger bonus damage. She can use True Strike alongside her Unbridled Strength martial techniques to increase stagger bonus damage, making it excellent against bosses who take little damage outside of stagger, but its physical damage makes it broadly useful."
+      ],
+      "limitBreakDescr": "Both of Tifa's limit breaks are martial techniques that deal tremendous physical damage towards a single target, based on her attack power attribute, which can also hit nearby enemies.",
+      "limitBreak": [
+        "Somersault - Tifa slides towards an enemy before leaping up with one leg to perform a somersault kick, hitting them twice and dealing heavy physical damage. Both hits deal similar damage.",
+        "Dolphin Flurry - Tifa opens by slamming on the ground and kicking overhead. She continues by leaping to the air and spinning, creating a wave in the air while dealing several hits of damage. She concludes with an uppercut punch from which a dolphin appears, dealing tremendous damage. This technique significantly increases an enemy's stagger gauge."
+      ],
+      "image": "http://dummyimage.com/158x100.png/ff4444/ffffff"
     }
   ],
   "keyItems": [
     {
+      "id": 0,
+      "game": "",
+      "name": "NO CHOICE",
+      "use": "",
+      "description": ""
+    },
+    {
       "id": 1,
-      "game": "Drud",
-      "name": "Kiljan",
-      "description": "Hereditary erythropoietic porphyria"
+      "game": "Final Fantasy VI",
+      "name": "Books",
+      "use": "No purpose",
+      "description": "Several simple books on machinery... ...and a book of 'special' samurai techniques."
     },
     {
       "id": 2,
-      "game": "Jerri",
-      "name": "Lancett",
-      "description": "Unspecified superficial injury of left knee, init encntr"
+      "game": "Final Fantasy VI",
+      "name": "Cider",
+      "use": "Used to complete Locke's Scenario in South Figaro.",
+      "description": "Cider stolen from a merchant."
     },
     {
       "id": 3,
-      "game": "Clyve",
-      "name": "Bugs",
-      "description": "Unspecified injury of unspecified lower leg"
+      "game": "Final Fantasy VI",
+      "name": "Royal Letter",
+      "use": "Gives information about a 'star-shaped mountain'.",
+      "description": "Where the mountains form a star..."
     },
     {
       "id": 4,
-      "game": "Bordie",
-      "name": "Sands-Allan",
-      "description": "Unspecified injury of left lower leg, sequela"
+      "game": "Final Fantasy X",
+      "name": "Celestial Mirror",
+      "use": "Needed to obtain and enhance Celestial Weapons.",
+      "description": "The surface is shiny and bright."
     },
     {
       "id": 5,
-      "game": "Rickie",
-      "name": "Cummine",
-      "description": "Contus/lac cereb, w LOC >24 hr w/o ret consc w surv"
+      "game": "Final Fantasy X",
+      "name": "Jecht's Sphere",
+      "use": "Allows Auron to learn new overdrives.",
+      "description": "A sphere recorded by Jecht ten years ago."
     },
     {
       "id": 6,
-      "game": "Nelia",
-      "name": "Fulham",
-      "description": "Snowboarder colliding with stationary object, init encntr"
+      "game": "Final Fantasy X",
+      "name": "Aeon's Soul",
+      "use": "Allows the player to spend items to raise aeons' attributes.",
+      "description": "Allows you to raise aeon's attributes."
     },
     {
       "id": 7,
-      "game": "Danielle",
-      "name": "Magarrell",
-      "description": "Unspecified inflammatory spondylopathy"
+      "game": "Final Fantasy VII Remake",
+      "name": "Moogle Medal",
+      "use": "In chapter 8 that you’ll be able to spend these, by talking to a kid dressed up as a Moogle at the Children’s Hideout in the Sector 5 Slums. Spend one Moogle Medal on a Membership Card, and he’ll begin selling a fairly wide selection of goods for even more of your shiny medallions. Aside from medicines and the odd piece of equipment, most of the items you’ll find at the Moogle Emporium, from the Graveyard Key to SP-granting Manuscripts, are unique to this vendor.",
+      "description": "A medal with a moogle on it. A popular item among collectors."
     },
     {
       "id": 8,
-      "game": "Jeannine",
-      "name": "Falk",
-      "description": "Contact with crocodile"
+      "game": "Final Fantasy VII Remake",
+      "name": "Sector 5 Reactor Keycard",
+      "use": "There are several rooms in Mako Reactor 5 where these keycards can be used on certain consoles to dispose of certain arsenal capabilities of the upcoming Air Buster boss fight as well as grant items the player can pick up right before the battle.",
+      "description": "A keycard required to operate cargo transport terminals in Mako Reactor 5."
     },
     {
       "id": 9,
-      "game": "Marchall",
-      "name": "Bartolijn",
-      "description": "Nondisp fx of med condyle of l tibia, 7thF"
+      "game": "Final Fantasy VII Remake",
+      "name": "Sam's Coin",
+      "use": "No use, just a 'prize' won for participating in Chocobo Sam's coin toss.",
+      "description": "A two-sided coin given by Chocobo Sam as consolation. Both sides are etched with an image of a chocobo."
     },
     {
       "id": 10,
-      "game": "Beatrix",
-      "name": "Silk",
-      "description": "Strike wall of swimming pool causing drown, sequela"
+      "game": "Final Fantasy VII Remake",
+      "name": "Key to the Sewers",
+      "use": "Used in Chapter 10 - Rough Waters, in the room leading to the generator, this key will unlock the door opposite, next to the graffiti of Stamp the dog.",
+      "description": "A key to the sewer gates found at the bottom of the channel."
     }
   ],
   "battleItems": [
     {
+      "id": 0,
+      "name": "NO CHOICE",
+      "effect": ""
+    },
+    {
       "id": 1,
-      "name": "Biodex",
-      "effect": "Other osteonecrosis, unspecified fibula"
+      "name": "X-Potion",
+      "effect": "Fully restores HP."
     },
     {
       "id": 2,
-      "name": "Fixflex",
-      "effect": "Intcran inj w LOC of 30 minutes or less, init"
+      "name": "Chocobo Wing",
+      "effect": "Casts Haste on the entire party, used to add Auto-Haste to armors in customization menu."
     },
     {
       "id": 3,
-      "name": "Sonsing",
-      "effect": "Unsp fracture of lower end of right humerus, init"
+      "name": "Mr. Cuddlesworth",
+      "effect": "A cute stuffed animal. Also an explosive."
     },
     {
       "id": 4,
-      "name": "Rank",
-      "effect": "Laceration of stomach, initial encounter"
+      "name": "Magicite",
+      "effect": "Summons a random esper into battle (excluding Odin, Raiden, and the GBA-only espers). It may even summon espers not in the party's possession."
     },
     {
       "id": 5,
-      "name": "Treeflex",
-      "effect": "Postp hemor, hematoma and seroma of circ sys org fol a proc"
+      "name": "Big Bomber",
+      "effect": "Deals 500 physical damage to enemies within range."
     }
   ],
   "equipment": [
     {
+      "id": 0,
+      "type": "",
+      "name": "NO CHOICE",
+      "description": "",
+      "effects": []
+    },
+    {
       "id": 1,
-      "type": "Bytecard",
-      "name": "SALIX NIGRA POLLEN",
-      "description": "Underdosing of expectorants",
-      "effects": "Transab proctosigmoidosc"
+      "type": "Weapon",
+      "name": "Hardedge",
+      "description": "A mighty blade able to cleave in one stroke anything foolish enough to stand in the wielder's way.",
+      "effects": [
+        "Grants a base Attack Power of 57 and base Magic Attack of 19", 
+        "a single materia slot + 2 linked materia slots", 
+        "Allows Cloud to use & learn the ability Infinity's End"
+      ]
     },
     {
       "id": 2,
-      "type": "Keylex",
-      "name": "Venlafaxine Hydrochloride",
-      "description": "Disp fx of medial condyle of right femur, init for clos fx",
-      "effects": "Opn rep dir ing hern NEC"
+      "type": "Body Armor",
+      "name": "Minerva Bustier",
+      "description": "Breastplate that provides a 25% bonus to maximum MP.",
+      "effects": [
+        "Grants 88 points of Defense",
+        "Grants 70 points of Magic Defense",
+        "Raises Magic Evasion by 10%",
+        "Adds 25% to maximum",
+        "+1 to Strength and Stamina, +2 Speed, +4 Magic",
+        "Nullifies Fire, Ice, Lightning, Wind",
+        "Resistant to Earth, Water, Poison, Holy",
+        "Can be found in: Kefka's Tower",
+        "Can be stolen from: Tonberries, Goddess",
+        "Dropped by: Tonberries",
+        "Can be won from the Coliseum by betting the Regal Gown",
+        "Can only be worn by: Terra & Celes"
+      ]
     },
     {
       "id": 3,
-      "type": "Stronghold",
-      "name": "Oxistat",
-      "description": "Unspecified fracture of upper end of unspecified ulna",
-      "effects": "Referral psych aftercare"
+      "type": "Armor",
+      "name": "Sophia Ring",
+      "description": "Four elemental 'Eater' abilities",
+      "effects": [
+        "Fire Eater (Absorbs fire spells and damage taken is turned into healing)",
+        "Blizzard Eater (Absorbs blizzard spells and damage taken is turned into healing)",
+        "Thunder Eater (Absorbs thunder spells and damage taken is turned into healing)",
+        "Water Eater (Absorbs water spells and damage taken is turned into healing)",
+        "Worn by Yuna"
+      ]
     },
     {
       "id": 4,
-      "type": "Y-find",
-      "name": "Metoprolol Tartrate",
-      "description": "Unsp focal TBI w loss of consciousness of 31-59 min, sequela",
-      "effects": "Cervical biopsy NEC"
+      "type": "Accessory",
+      "name": "Götterdämmerung",
+      "description": "A neckpiece that radiates a light powerful enough to forge destiny anew.",
+      "effects": [
+        "Wearer enters battle with full Limit Break gauge",
+        "Wearer's Limit Break gauge gradually fills during battle",
+        "Worn by: Any Party Member"
+      ]
     },
     {
       "id": 5,
-      "type": "Gembucket",
-      "name": "nevirapine",
-      "description": "Patient room in hospital as place",
-      "effects": "Cornea reconstruct NEC"
+      "type": "Weapon",
+      "name": "Godhand",
+      "description": "Rikku's Celestial Weapon - Easiest to obtain by entering 'GODHAND' as a password on the airship and going to that locatiom. The closer to max HP Rikku is, the more damage Godhand does.",
+      "effects": [
+        "Prevents Rikku from collecting AP if not powered up.",
+        "If upgraded with only the Mercury Crest - Godhand still prevents AP collection, but Overdrive gauge charges twice as fast",
+        "If upgraded with Mercury Crest & Mercury Sigil - Godhand gains the Break Damage Limit ability, Triple Overdrive (Overdrive gauge charges 3 times as quickly), Double AP (Rikku collects 2X AP from battles, and Gillionaire (Doubles the amount of Gil earned after battle)."
+      ]
     }
   ],
-  "userGameNotes": [
+  "strategyNotes": [
     {
-      "userNotes": "testing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "userNote": "testing the emergency broadcast system",
       "gamesId": 2,
-      "userId": 2,
-      "dateCreated": "12/15/2021, 11:34:31 AM",
-      "id": 15
+      "userId": 1,
+      "dateCreated": "12/16/2021, 2:20:49 PM",
+      "id": 2
     },
     {
-      "userNote": "Heck yeah!",
-      "gamesId": 2,
+      "userNote": "kefka???",
+      "gamesId": 1,
       "userId": 2,
-      "dateCreated": "12/16/2021, 9:32:35 AM",
-      "id": 16
+      "dateCreated": "12/16/2021, 4:18:59 PM",
+      "id": 4
+    },
+    {
+      "userNote": "Need to look up where to get Bahamut materia",
+      "gamesId": 3,
+      "userId": 4,
+      "dateCreated": "12/16/2021, 4:33:03 PM",
+      "id": 6
+    },
+    {
+      "userNote": "Found anima summon at temple from start of game",
+      "gamesId": 2,
+      "userId": 4,
+      "dateCreated": "12/16/2021, 4:33:55 PM",
+      "id": 7
+    },
+    {
+      "userNote": "test",
+      "gamesId": 1,
+      "userId": 4,
+      "dateCreated": "12/17/2021, 1:04:07 AM",
+      "id": 8
     }
   ],
-  "gameItems": [{
-    "id": 1,
-    "gamesId": 1,
-    "keyItemsId": 1,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 2,
-    "gamesId": 2,
-    "keyItemsId": 2,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 3,
-    "gamesId": 3,
-    "keyItemsId": 3,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 4,
-    "gamesId": 1,
-    "keyItemsId": 4,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 5,
-    "gamesId": 2,
-    "keyItemsId": 5,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 6,
-    "gamesId": 3,
-    "keyItemsId": 6,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 7,
-    "gamesId": 1,
-    "keyItemsId": 7,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 8,
-    "gamesId": 2,
-    "keyItemsId": 8,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 9,
-    "gamesId": 3,
-    "keyItemsId": 9,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 10,
-    "gamesId": 1,
-    "keyItemsId": 10,
-    "equipmentId": "",
-    "battleItemsId": ""
-  }, {
-    "id": 11,
-    "gamesId": 1,
-    "keyItemsId": "",
-    "equipmentId": 1,
-    "battleItemsId": ""
-  }, {
-    "id": 12,
-    "gamesId": 2,
-    "keyItemsId": "",
-    "equipmentId": 2,
-    "battleItemsId": ""
-  }, {
-    "id": 13,
-    "gamesId": 3,
-    "keyItemsId": "",
-    "equipmentId": 3,
-    "battleItemsId": ""
-  }, {
-    "id": 14,
-    "gamesId": 1,
-    "keyItemsId": "",
-    "equipmentId": 4,
-    "battleItemsId": ""
-  }, {
-    "id": 15,
-    "gamesId": 2,
-    "keyItemsId": "",
-    "equipmentId": 5,
-    "battleItemsId": ""
-  }, {
-    "id": 16,
-    "gamesId": 3,
-    "keyItemsId": "",
-    "equipmentId": "",
-    "battleItemsId": 1
-  }, {
-    "id": 17,
-    "gamesId": 1,
-    "keyItemsId": "",
-    "equipmentId": "",
-    "battleItemsId": 2
-  }, {
-    "id": 18,
-    "gamesId": 2,
-    "keyItemsId": "",
-    "equipmentId": "",
-    "battleItemsId": 3
-  }, {
-    "id": 19,
-    "gamesId": 3,
-    "keyItemsId": "",
-    "equipmentId": "",
-    "battleItemsId": 4
-  }, {
-    "id": 20,
-    "gamesId": 1,
-    "keyItemsId": "",
-    "equipmentId": "",
-    "battleItemsId": 5
-  }]
+  "joinedItemList": [
+    {
+      "id": 1,
+      "gamesId": 1,
+      "keyItemsId": 1,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 2,
+      "gamesId": 1,
+      "keyItemsId": 2,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 3,
+      "gamesId": 1,
+      "keyItemsId": 3,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 4,
+      "gamesId": 2,
+      "keyItemsId": 4,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 5,
+      "gamesId": 2,
+      "keyItemsId": 5,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 6,
+      "gamesId": 2,
+      "keyItemsId": 6,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 7,
+      "gamesId": 3,
+      "keyItemsId": 7,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 8,
+      "gamesId": 3,
+      "keyItemsId": 8,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 9,
+      "gamesId": 3,
+      "keyItemsId": 9,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 10,
+      "gamesId": 3,
+      "keyItemsId": 10,
+      "equipmentId": 0,
+      "battleItemsId": 0
+    },
+    {
+      "id": 11,
+      "gamesId": 3,
+      "keyItemsId": 0,
+      "equipmentId": 1,
+      "battleItemsId": 0
+    },
+    {
+      "id": 12,
+      "gamesId": 1,
+      "keyItemsId": 0,
+      "equipmentId": 2,
+      "battleItemsId": 0
+    },
+    {
+      "id": 13,
+      "gamesId": 2,
+      "keyItemsId": 0,
+      "equipmentId": 3,
+      "battleItemsId": 0
+    },
+    {
+      "id": 14,
+      "gamesId": 3,
+      "keyItemsId": 0,
+      "equipmentId": 4,
+      "battleItemsId": 0
+    },
+    {
+      "id": 15,
+      "gamesId": 2,
+      "keyItemsId": 0,
+      "equipmentId": 5,
+      "battleItemsId": 0
+    },
+    {
+      "id": 16,
+      "gamesId": 1,
+      "keyItemsId": 0,
+      "equipmentId": 0,
+      "battleItemsId": 1
+    },
+    {
+      "id": 17,
+      "gamesId": 2,
+      "keyItemsId": 0,
+      "equipmentId": 0,
+      "battleItemsId": 2
+    },
+    {
+      "id": 18,
+      "gamesId": 3,
+      "keyItemsId": 0,
+      "equipmentId": 0,
+      "battleItemsId": 3
+    },
+    {
+      "id": 19,
+      "gamesId": 1,
+      "keyItemsId": 0,
+      "equipmentId": 0,
+      "battleItemsId": 4
+    },
+    {
+      "id": 20,
+      "gamesId": 3,
+      "keyItemsId": 0,
+      "equipmentId": 0,
+      "battleItemsId": 5
+    }
+  ]
 }
